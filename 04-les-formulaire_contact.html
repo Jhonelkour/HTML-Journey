@@ -17,31 +17,37 @@
             </ul>
         </nav>
         <h1>Nous Contacter</h1>
-        <form action="04-les-formulaire_contact.html"></form>
-        <fieldset>
-            <legend>Nous contacter</legend>
-            <div>
-                <label for="emailinput">Votre Email</label>
-                <input type="text" name="email" id="emailinput" placeholder="test@demo.fr" required>
-            </div>
-            <div>
-                <label for="nameinput">Votre Nom</label>
-                <input type="text" name="firstname" id="nameinput" >
-            </div>
-            <div>
-                <label for="sexcatg">Sexe</label>
-                <input type="radio" name="sexcatg" id="sexcatg" value="homme">Homme
-                <input type="radio" name="sexcatg" id="sexcatg" value="femme">Femme
-            </div>
-            <div>
-                <label for="message" style="display: block;">Votre Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici..."></textarea>            
-            </div>
-            <div>
-                <label for="CGU">J'accepte conditions générales d'utilisation</label>
-                <input type="checkbox" name="Cgu" id="CGU">
-            </div>
-            <input type="submit" value="Envoyer">
-        </fieldset>
+        <form action="04-les-formulaire_contact.html">
+            <fieldset>
+                <legend>Nous contacter</legend>
+                <div>
+                    <label for="emailinput">Votre Email</label>
+                    <input type="text" name="email" id="emailinput" placeholder="test@demo.fr" required>
+                </div>
+                <div>
+                    <label for="nameinput">Votre Nom</label>
+                    <input type="text" name="firstname" id="nameinput" >
+                </div>
+                <div>
+                    <label for="gender_male">Gender</label>
+                    <input type="radio" name="gender" id="gender_male" value="male">Male
+                    <input type="radio" name="gender" id="gender_female" value="female">Female
+                </div>
+                <div>
+                    <label for="message" style="display: block;">Votre Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici..."></textarea>            
+                </div>
+                <div>
+                    <label for="fileinput">Joindre un fichier</label>
+                    <input type="file" name="fileinput" id="fileinput" accept=".jpg, .jpeg, .png, .pdf">
+                </div>
+                <div>
+                    <label for="CGU">J'accepte conditions générales d'utilisation</label>
+                    <input type="checkbox" name="Cgu" id="CGU">
+                </div>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
     </body>
 </html>
