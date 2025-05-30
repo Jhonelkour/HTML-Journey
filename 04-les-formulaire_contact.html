@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Café du Coin, Nous Contacter</title>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="Votre pause café parfaite avec une sélection de grains premium et un service convivial.">
+        <meta name="keywords" content="café, grains de café, pause café, café artisanal,boisson chaude, café premium, café du coin, torréfaction, espresso, latte, cappuccino.">   
+    
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="02-text-elements.html" title="Accueil">Accueil</a></li>
+                <li><a href="03-hyperlinks.html" title="Menu">Menu</a></li>
+                <li><a href="04-les-formulaire_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Nous Contacter</h1>
+        <form action="04-les-formulaire_contact.html"></form>
+        <fieldset>
+            <legend>Nous contacter</legend>
+            <div>
+                <label for="emailinput">Votre Email</label>
+                <input type="text" name="email" id="emailinput" placeholder="test@demo.fr" required>
+            </div>
+            <div>
+                <label for="nameinput">Votre Nom</label>
+                <input type="text" name="firstname" id="nameinput" >
+            </div>
+            <div>
+                <label for="sexcatg">Sexe</label>
+                <input type="radio" name="sexcatg" id="sexcatg" value="homme">Homme
+                <input type="radio" name="sexcatg" id="sexcatg" value="femme">Femme
+            </div>
+            <div>
+                <label for="message" style="display: block;">Votre Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici..."></textarea>            
+            </div>
+            <div>
+                <label for="CGU">J'accepte conditions générales d'utilisation</label>
+                <input type="checkbox" name="Cgu" id="CGU">
+            </div>
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </body>
+</html>
